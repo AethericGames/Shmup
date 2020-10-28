@@ -24,3 +24,4 @@ C:\Users\nb_be\source\repos\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.dll
 C:\Users\nb_be\source\repos\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.pdb
 C:\Users\nb_be\source\repos\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.genruntimeconfig.cache
 C:\Users\nb_be\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\background.xnb
+C:\Users\nb_be\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\UIFont.xnb
