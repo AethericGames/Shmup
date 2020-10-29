@@ -21,9 +21,33 @@ namespace Shmup
 		{
 			_spriteBatch.Draw(
 				spriteTexture,
-				new Rectangle((int)spritePos.X, (int)spritePos.Y, spriteTexture.Width, spriteTexture.Height),
+				new Rectangle(
+					(int)spritePos.X,
+					(int)spritePos.Y,
+					spriteTexture.Width,
+					spriteTexture.Height
+					),
 				Color.White
 				);
+		}
+
+		public bool IsColliding(Sprite otherSprite)
+		{
+			Rectangle thisRect = new Rectangle(
+				(int)spritePos.X,
+				(int)spritePos.Y,
+				spriteTexture.Width,
+				spriteTexture.Height
+				);
+
+			Rectangle otherRect = new Rectangle(
+				(int)otherSprite.spritePos.X,
+				(int)otherSprite.spritePos.Y,
+				otherSprite.spriteTexture.Width,
+				otherSprite.spriteTexture.Height
+				);
+
+			return thisRect.Intersects(otherRect);
 		}
 	}
 }
