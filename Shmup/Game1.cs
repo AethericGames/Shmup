@@ -5,12 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-// simple collision detection
-// player lives / death
-// counter
-// UI (font, imported)
-
-
 namespace Shmup
 {
 	public class Game1 : Game
@@ -18,13 +12,14 @@ namespace Shmup
 		private GraphicsDeviceManager _graphics;
 		private SpriteBatch _spriteBatch;
 
-		Texture2D saucerTxr, missileTxr, backgroundTxr;
+		Texture2D saucerTxr, missileTxr, backgroundTxr, particleTxr;
 		Point screenSize = new Point(800, 450);
 		float spawnCooldown = 2;
 		
 		Sprite backgroundSprite;
 		PlayerSprite playerSprite;
 		List<MissileSprite> missileList = new List<MissileSprite>();
+		List<ParticleSprite> particleList = new List<ParticleSprite>();
 		SpriteFont uiFont, bigFont;
 
 		public Game1()
@@ -49,6 +44,7 @@ namespace Shmup
 			saucerTxr = Content.Load<Texture2D>("saucer");
 			missileTxr = Content.Load<Texture2D>("missile");
 			backgroundTxr = Content.Load<Texture2D>("background");
+			particleTxr = Content.Load<Texture2D>("particle");
 			uiFont = Content.Load<SpriteFont>("UIFont");
 			bigFont = Content.Load<SpriteFont>("BigFont");
 
@@ -84,12 +80,23 @@ namespace Shmup
 				
 				if(playerSprite.playerLives > 0 && playerSprite.IsColliding(missile))
 				{
+					for (int i = 0; i < 16; i++)
+						particleList.Add(new ParticleSprite(particleTxr,
+							new Vector2(
+								missile.spritePos.X + (missileTxr.Width / 2) - (particleTxr.Width / 2),
+								missile.spritePos.Y + (missileTxr.Height / 2) - (particleTxr.Height / 2)
+								)
+							));
+					
 					missile.dead = true;
 					playerSprite.playerLives--;
 				}
 			}
 
+			foreach (ParticleSprite particle in particleList) particle.Update(gameTime, screenSize);
+
 			missileList.RemoveAll(missile => missile.dead);
+			particleList.RemoveAll(particle => particle.currentLife <= 0);
 
 			base.Update(gameTime);
 
@@ -104,7 +111,8 @@ namespace Shmup
 
 			backgroundSprite.Draw(_spriteBatch);
 			if (playerSprite.playerLives > 0) playerSprite.Draw(_spriteBatch);
-			foreach(MissileSprite missile in missileList) missile.Draw(_spriteBatch);
+			foreach (MissileSprite missile in missileList) missile.Draw(_spriteBatch);
+			foreach (ParticleSprite particle in particleList) particle.Draw(_spriteBatch);
 
 			_spriteBatch.DrawString(
 				uiFont,

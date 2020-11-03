@@ -26,3 +26,4 @@ C:\Users\nb_be\source\repos\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.genruntime
 C:\Users\nb_be\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\background.xnb
 C:\Users\nb_be\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\UIFont.xnb
 C:\Users\nb_be\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\BigFont.xnb
+C:\Users\nb_be\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\particle.xnb
