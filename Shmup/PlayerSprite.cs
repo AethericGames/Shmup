@@ -7,7 +7,7 @@ namespace Shmup
 {
 	class PlayerSprite : Sprite
 	{
-		float moveSpeed = 250;
+		float moveSpeed = 500;
 		public int playerLives = 10;
 
 		public PlayerSprite(Texture2D newTxr, Vector2 newPos) : base(newTxr, newPos)

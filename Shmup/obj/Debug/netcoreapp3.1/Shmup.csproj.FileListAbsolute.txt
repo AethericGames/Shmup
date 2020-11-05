@@ -27,3 +27,5 @@ C:\Users\nb_be\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\backgrou
 C:\Users\nb_be\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\UIFont.xnb
 C:\Users\nb_be\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\BigFont.xnb
 C:\Users\nb_be\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\particle.xnb
+C:\Users\nb_be\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\missileExplode.xnb
+C:\Users\nb_be\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\shipExplode.xnb

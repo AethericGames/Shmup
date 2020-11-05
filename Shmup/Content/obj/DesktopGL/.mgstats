@@ -2,6 +2,8 @@ Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Siz
 "C:/Users/nb_be/source/repos/Shmup/Shmup/Content/background.png","C:/Users/nb_be/source/repos/Shmup/Shmup/Content/bin/DesktopGL/background.xnb","TextureProcessor","Texture2DContent",445299,1440085,0.2162272
 "C:/Users/nb_be/source/repos/Shmup/Shmup/Content/BigFont.spritefont","C:/Users/nb_be/source/repos/Shmup/Shmup/Content/bin/DesktopGL/BigFont.xnb","FontDescriptionProcessor","SpriteFontContent",2011,267298,0.2291376
 "C:/Users/nb_be/source/repos/Shmup/Shmup/Content/missile.png","C:/Users/nb_be/source/repos/Shmup/Shmup/Content/bin/DesktopGL/missile.xnb","TextureProcessor","Texture2DContent",22084,32853,0.1668401
+"C:/Users/nb_be/source/repos/Shmup/Shmup/Content/missileExplode.wav","C:/Users/nb_be/source/repos/Shmup/Shmup/Content/bin/DesktopGL/missileExplode.xnb","SoundEffectProcessor","SoundEffectContent",34706,34665,1.0338221
 "C:/Users/nb_be/source/repos/Shmup/Shmup/Content/particle.png","C:/Users/nb_be/source/repos/Shmup/Shmup/Content/bin/DesktopGL/particle.xnb","TextureProcessor","Texture2DContent",2405,16469,0.2562019
 "C:/Users/nb_be/source/repos/Shmup/Shmup/Content/saucer.png","C:/Users/nb_be/source/repos/Shmup/Shmup/Content/bin/DesktopGL/saucer.xnb","TextureProcessor","Texture2DContent",31236,32853,0.0031338
+"C:/Users/nb_be/source/repos/Shmup/Shmup/Content/shipExplode.wav","C:/Users/nb_be/source/repos/Shmup/Shmup/Content/bin/DesktopGL/shipExplode.xnb","SoundEffectProcessor","SoundEffectContent",182206,182121,0.1518509
 "C:/Users/nb_be/source/repos/Shmup/Shmup/Content/UIFont.spritefont","C:/Users/nb_be/source/repos/Shmup/Shmup/Content/bin/DesktopGL/UIFont.xnb","FontDescriptionProcessor","SpriteFontContent",2011,70690,0.0209186

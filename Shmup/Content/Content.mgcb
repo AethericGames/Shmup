@@ -44,6 +44,12 @@
 /processorParam:TextureFormat=Color
 /build:missile.png
 
+#begin missileExplode.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:missileExplode.wav
+
 #begin particle.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -67,6 +73,12 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:saucer.png
+
+#begin shipExplode.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:shipExplode.wav
 
 #begin UIFont.spritefont
 /importer:FontDescriptionImporter
